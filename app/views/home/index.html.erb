@@ -1,0 +1,2 @@
+<%= text_field_tag 'search_user', nil, placeholder: 'search user' %>
+<%= link_to 'Edit Profile', current_user.profile.present? ? edit_profile_path(id: current_user.profile.id) : new_profile_path %>

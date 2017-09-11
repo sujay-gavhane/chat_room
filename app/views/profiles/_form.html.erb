@@ -1,0 +1,12 @@
+<%= form_for(@profile) do |f| %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name, placeholder: "Enter First Name" %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name, placeholder: "Enter Last Name" %>
+
+  <%= f.label :company %>
+  <%= f.text_field :company, placeholder: "Enter Company" %>
+
+  <%= f.submit 'Save' %>
+<% end %>
